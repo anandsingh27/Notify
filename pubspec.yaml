@@ -1,0 +1,25 @@
+name: wa_filter
+description: WhatsApp message filter overlay – see selected chats without opening WhatsApp
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Floating overlay over other apps (Android only)
+  flutter_overlay_window: ^0.5.0
+  # Key–value persistence (filter list + message history)
+  shared_preferences: ^2.2.3
+  # State management
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+flutter:
+  uses-material-design: true
